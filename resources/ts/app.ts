@@ -12,6 +12,5 @@ const app =createApp({
         console.log("app mounted");
     }
 });
-app.config.globalProperties.window = window;
 
 app.use(router).mount('#app');
