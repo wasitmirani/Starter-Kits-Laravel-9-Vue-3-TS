@@ -20,7 +20,7 @@ const mix = require('laravel-mix');
 
 mix.options({
     hmrOptions: {
-        host: 'edulms.test',  // edulms.test is my local domain used for testing
+        host: process.env.APP_URL,  // edulms.test is my local domain used for testing
         port: 8080,
     }
  });
